@@ -21,4 +21,4 @@ Once you have done all the previous steps, you are now ready to run the file. On
 Node server.js 
 ```
 Once it is running, you are ready to open the chatbot.  
-On Safari or your other browser, visit [http://localhost:{Number specified in the code}]
+On Safari or your other browser, visit "http://localhost:{Number specified in the code}"
