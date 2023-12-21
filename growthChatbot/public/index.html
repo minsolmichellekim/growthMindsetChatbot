@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LinguaGemma Chatbot</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <img id='shell' src="images/shell.png" alt="Logo">
+
+  <div id="header">Welcome to Lingua Gemma! </div>
+  
+  <div id="chat-container">
+    <div id="chat-log"></div>
+    <input type="text" id="user-input" placeholder="Type your message...">
+    <button onclick="sendMessage()">Send</button>
+  </div>
+
+  <script>
+    async function sendMessage() {
+      const userMessage = document.getElementById('user-input').value;
+
+      // Append user message to chat log
+      document.getElementById('chat-log').innerHTML += `<div>User: ${userMessage}</div>`;
+
+      // Send user message to server
+      const response = await fetch('/ask', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/x-www-form-urlencoded',
+        },
+        body: `message=${encodeURIComponent(userMessage)}`,
+      });
+
+      const data = await response.json();
+      const botResponse = data.botResponse;
+
+      // Append bot response to chat log
+      document.getElementById('chat-log').innerHTML += `<div>Gemma 🐚: ${botResponse}</div>`;
+
+      // Clear user input
+      document.getElementById('user-input').value = '';
+    }
+  </script>
+</body>
+</html>
