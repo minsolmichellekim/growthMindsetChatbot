@@ -6,4 +6,9 @@ Download the following packages with specific versions as below:
 
     __: ___
 
-## How to run __.py
+## How to run server.jd
+```
+Node server.js 
+```
+On your website, 
+http://localhost:3002/
