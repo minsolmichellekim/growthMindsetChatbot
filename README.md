@@ -7,18 +7,18 @@ Download the following packages with specific versions as below:
     Python : 3.11.0
     express
     openai
-    
-Once you open the folders, replace 'your-api-key' with your actual OpenAI API key. 
-Also, change port number as desired to be run on your local computer 
+
+## How to run server.jd
+Once you open the folders, decide whether you will be using fixed or growth mindset chatbot. 
+Replace 'your-api-key' with your actual OpenAI API key. 
+Next, change port number as desired to be run on your local computer. 
 ```
 const port = process.env.PORT || 3006
 ```
-
-    
-
-## How to run server.jd
+If you prefer other words to learn, you can also change the vocabularies you are going to learn int the system prompt. 
+Once you have done all the previous steps, you are now ready to run the file. On your terminal, run the code below: 
 ```
 Node server.js 
 ```
-On your website, 
-http://localhost:{Number specified in the code}/
+Once it is running, you are ready to open the chatbot.  
+On Safari or your other browser, visit http://localhost:{Number specified in the code}/
