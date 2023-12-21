@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&family=Lexend&family=Nanum+Gothic:wght@400;700&display=swap');/* styles.css */
+body {
+    font-family: 'Nanum Gothic', sans-serif;
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
+    background-color: #DBECB5;
+  }
+  
+  #shell{
+    width: 25%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 40px;
+    
+    
+  }
+  #header {
+    color: #111111e9;
+    text-align: center;
+    padding: 10px;
+    font-size: 1.5em;
+    font-family: 'Nanum Gothic', sans-serif;
+    font-weight: 700;
+  }
+  
+  #chat-container {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  #chat-log {
+    margin-bottom: 10px;
+  }
+  
+  input {
+    width: 70%;
+    padding: 8px;
+    box-sizing: border-box;
+    margin-left: 5%;
+    margin-right: auto;
+  }
+  
+  button {
+    width: 18%;
+    padding: 10px;
+    box-sizing: border-box;
+    background-color: #7bd1fa;
+    color: #0a1c52;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #d3f192;
+  }
+  
